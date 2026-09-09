@@ -24,7 +24,7 @@ int main(){
   }
 
   Node* head;
-  head == NULL;
+  head = NULL;
   if(head == NULL){
     head = new Node(arr[0]);
   }
@@ -33,11 +33,11 @@ int main(){
     Node* temp;
     temp = new Node(arr[i]);
     head -> next = temp;
-    temp = head;
+    head = temp;
   }
 
   Node *newnode = head;
-  
+
   while(newnode != NULL){
   cout<< newnode -> data<< endl;
   newnode = newnode ->next; 
