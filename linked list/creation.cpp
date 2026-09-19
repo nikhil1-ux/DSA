@@ -28,13 +28,13 @@ int main(){
   if(head == NULL){
     head = new Node(arr[0]);
   }
-  for(int i = 1; i < n; i++ ){
-   
-    Node* temp;
-    temp = new Node(arr[i]);
-    head -> next = temp;
-    head = temp;
-  }
+  Node* temp;
+  temp = head;
+ for(int i = 1; i < n; i++){
+    temp->next = new Node(arr[i]);
+    temp = temp->next;
+}
+
 
   Node *newnode = head;
 
